@@ -11,8 +11,8 @@ namespace TEMA_LAB3
             //Ex3();
             //Ex4();
             //Ex5();
-            Ex51();
-            //Ex6();
+            //Ex51();
+            Ex6();
             //EX7();
             //EX8();
             //EX9();
@@ -155,8 +155,39 @@ namespace TEMA_LAB3
 
         }
 
+        static void Ex6()
+        //daca n este prim, va afisa "prim", altfel va afisa numarul cu care este divizibil
+        //a=1,b=n,n/ab,n/a,n/b
+        {                                   
+                int numar;             
+                bool prim = true;               
+                int i = 2;
+
+                numar = int.Parse(Console.ReadLine());
+
+                while (i <= numar / 2)
+                {
+                    
+                 if (numar % i == 0)
+                    prim = false;
+                    i += 1;
+                }
+
+                if (prim)
+                {
+                    Console.WriteLine("Numarul {0} este prim", numar);
+                }
+                else
+                {
+                    Console.WriteLine("Numarul {0} nu este prim", numar);
+                }
+
+                Console.Read();
+            }
+        }
     }
-}
+
+
 
 
 
