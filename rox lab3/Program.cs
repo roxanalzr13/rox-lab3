@@ -12,9 +12,9 @@ namespace TEMA_LAB3
             //Ex4();
             //Ex5();
             //Ex51();
-            Ex6();
-            //EX7();
-            //EX8();
+            //Ex6();
+            //Ex7();
+            Ex8();
             //EX9();
             //Ex10()
             Console.ReadLine();
@@ -158,34 +158,111 @@ namespace TEMA_LAB3
         static void Ex6()
         //daca n este prim, va afisa "prim", altfel va afisa numarul cu care este divizibil
         //a=1,b=n,n/ab,n/a,n/b
-        {                                   
-                int numar;             
-                bool prim = true;               
-                int i = 2;
+        {
+            int numar;
+            bool prim = true;
+            int i = 2;
 
-                numar = int.Parse(Console.ReadLine());
+            numar = int.Parse(Console.ReadLine());
 
-                while (i <= numar / 2)
-                {
-                    
-                 if (numar % i == 0)
+            while (i <= numar / 2)
+            {
+
+                if (numar % i == 0)
                     prim = false;
-                    i += 1;
-                }
+                i += 1;
+            }
 
-                if (prim)
-                {
-                    Console.WriteLine("Numarul {0} este prim", numar);
-                }
-                else
-                {
-                    Console.WriteLine("Numarul {0} nu este prim", numar);
-                }
+            if (prim)
+            {
+                Console.WriteLine("Numarul {0} este prim", numar);
+            }
+            else
+            {
+                Console.WriteLine("Numarul {0} nu este prim", numar);
+            }
 
-                Console.Read();
+            Console.Read();
+        }
+        static void Ex7()
+        {
+            // se citesc 2 numere de la tastatura. Sa se scrie un progr care sa afiseze cel mai mare divizor comun
+            {
+                int a, b, n, m;
+                Console.Write("Introduceti a ");
+                a = int.Parse(Console.ReadLine());
+                Console.Write("Introduceti b ");
+                b = int.Parse(Console.ReadLine());
+                n = a; m = b;
+                while (a != b)
+                {
+
+                    if (a > b)
+                    {
+                        a = a - b;
+                    }
+                    else
+                    {
+                        b = b - a;
+                        Console.WriteLine("c.m.m.d.c. ({0},{1}) = {2}", n, m, a);
+                        Console.ReadLine();
+                    }
+                }
             }
         }
+
+        static void Ex8()
+        {
+
+
+            //  Scrie un program care afiseaza numerele de la 1 la N. Daca numarul
+            //este multiplu de 3, sa se afiseze Fizz, daca este multiplu de 3 sa se afiseze
+            //Buzz, daca e multiplu si de 3 si de 5(ex: 15) sa se afiseze FizzBuzz, in restul
+            //cazurilor sa se afiseze numarul
+            {
+                int i;    
+                i = 1;
+                int n;
+                n = int.Parse(Console.ReadLine());
+
+                for ( i = 1; i <= n; i++)
+
+                {
+                    if (i % 15 == 0)
+                    {
+                        Console.WriteLine("fizzbuzz");
+                    }
+                    else if (i % 3 == 0)
+                    {
+                        Console.WriteLine("fizz");
+                    }
+                    else if (i % 5 == 0)
+                    {
+                        Console.WriteLine("buzz");
+                    }
+                    else
+                    {
+                        Console.WriteLine(i);
+                    }
+                ;
+                }
+            }
+        }
+
     }
+
+}
+                
+    
+
+          
+    
+
+
+
+
+
+
 
 
 
