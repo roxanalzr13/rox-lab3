@@ -13,7 +13,7 @@ namespace TEMA_LAB3
             //Ex5();
             //Ex51();
             //Ex6();
-            //Ex7();
+            Ex7();
             //Ex8();
             //Ex9();
             //Ex10()
@@ -73,7 +73,7 @@ namespace TEMA_LAB3
             Console.Read();
 
         }
-        
+
 
         static void Ex3()
 
@@ -195,25 +195,49 @@ namespace TEMA_LAB3
                 a = int.Parse(Console.ReadLine());
                 Console.Write("Introduceti b ");
                 b = int.Parse(Console.ReadLine());
-                n = a; m = b;
-                while (a != b)
-                {
 
-                    if (a > b)
-                    {
-                        a = a - b;
-                    }
-                    else
-                    {
-                        b = b - a;
-                        Console.WriteLine("c.m.m.d.c. ({0},{1}) = {2}", n, m, a);
-                        Console.ReadLine();
-                    }
+                if (a == 0 && b == 0)
+                {
+                    Console.WriteLine("numerele sunt nule");
                 }
+                else
+                        if (a == 0)
+                {
+                    Console.WriteLine("cel mai mare divizor comun este");
+                    Console.WriteLine("egal cu" + b);
+                }
+                else
+                       if (b == 0)
+                {
+                    Console.WriteLine("cel mai mare divizor comun este");
+                    Console.WriteLine("egal cu" + a);
+                }
+                else
+                {
+                    m = a;
+                    n = b;
+                    int r;
+                    do
+                    {
+                        r = m % n;
+                        m = n;
+                        n = r;
+                    }
+                    while (r != 0);
+
+                    Console.WriteLine("Cel mai mare divizor comun");
+                    Console.WriteLine("al numerelor" + a + "si" + b + "este egal cu" + m);
+
+
+                }
+
+
+
             }
         }
 
         static void Ex8()
+
         {
 
 
@@ -252,7 +276,7 @@ namespace TEMA_LAB3
         }
 
     }
-}      
+}    
                 
     
 
