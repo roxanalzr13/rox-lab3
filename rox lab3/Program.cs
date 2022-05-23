@@ -7,15 +7,15 @@ namespace TEMA_LAB3
         static void Main(string[] args)
         {
             //Ex1();
-            //Ex2();
+            //Ex2(); 
             //Ex3();
             //Ex4();
             //Ex5();
             //Ex51();
             //Ex6();
             //Ex7();
-            Ex8();
-            //EX9();
+            //Ex8();
+            //Ex9();
             //Ex10()
             Console.ReadLine();
         }
@@ -73,8 +73,10 @@ namespace TEMA_LAB3
             Console.Read();
 
         }
+        
 
         static void Ex3()
+
         {
             // nr n citit de la tastatura este patrat perfect
 
@@ -186,7 +188,7 @@ namespace TEMA_LAB3
         }
         static void Ex7()
         {
-            // se citesc 2 numere de la tastatura. Sa se scrie un progr care sa afiseze cel mai mare divizor comun
+            //se citesc 2 numere de la tastatura. Sa se scrie un progr care sa afiseze cel mai mare divizor comun
             {
                 int a, b, n, m;
                 Console.Write("Introduceti a ");
@@ -216,16 +218,16 @@ namespace TEMA_LAB3
 
 
             //  Scrie un program care afiseaza numerele de la 1 la N. Daca numarul
-            //este multiplu de 3, sa se afiseze Fizz, daca este multiplu de 3 sa se afiseze
+            //este multiplu de 3, sa se afiseze Fizz, daca este multiplu de 5 sa se afiseze
             //Buzz, daca e multiplu si de 3 si de 5(ex: 15) sa se afiseze FizzBuzz, in restul
             //cazurilor sa se afiseze numarul
             {
-                int i;    
+                int i;
                 i = 1;
                 int n;
                 n = int.Parse(Console.ReadLine());
 
-                for ( i = 1; i <= n; i++)
+                for (i = 1; i <= n; i++)
 
                 {
                     if (i % 15 == 0)
@@ -250,8 +252,7 @@ namespace TEMA_LAB3
         }
 
     }
-
-}
+}      
                 
     
 
