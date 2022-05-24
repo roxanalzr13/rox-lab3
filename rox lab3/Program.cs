@@ -13,9 +13,9 @@ namespace TEMA_LAB3
             //Ex5();
             //Ex51();
             //Ex6();
-            Ex7();
+            //Ex7();
             //Ex8();
-            //Ex9();
+            Ex9();
             //Ex10()
             Console.ReadLine();
         }
@@ -274,7 +274,20 @@ namespace TEMA_LAB3
                 }
             }
         }
+        static void Ex9()
+        {
 
+
+            Console.WriteLine("Lungimea este=");
+            int L = int.Parse(Console.ReadLine());
+            Console.WriteLine("Latimea este=");
+            int l = int.Parse(Console.ReadLine());
+
+            int D = l * l + L * L;
+            Console.WriteLine(Math.Sqrt(D)); 
+
+            
+        }
     }
 }    
                 
