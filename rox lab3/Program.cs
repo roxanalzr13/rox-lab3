@@ -16,6 +16,7 @@ namespace TEMA_LAB3
             //Ex7();
             //Ex8();
             Ex9();
+            //Ex99();
             //Ex10()
             Console.ReadLine();
         }
@@ -230,9 +231,6 @@ namespace TEMA_LAB3
 
 
                 }
-
-
-
             }
         }
 
@@ -276,20 +274,35 @@ namespace TEMA_LAB3
         }
         static void Ex9()
         {
-
+            // SA SE CALCULEZE DIAGONALA UNUI DREPTUNGHI DINTR-O FUNCTIE
 
             Console.WriteLine("Lungimea este=");
             int L = int.Parse(Console.ReadLine());
             Console.WriteLine("Latimea este=");
             int l = int.Parse(Console.ReadLine());
+            if (l < 1 && L < 1)
+            {
+                Console.WriteLine("Eroare");
+                return;
 
-            int D = l * l + L * L;
-            Console.WriteLine(Math.Sqrt(D)); 
+            }
+            else
+            {
+                double D = l * l + L * L;
+                Console.WriteLine(Math.Sqrt(D));
+            }
 
-            
         }
-    }
-}    
+    }    
+}
+
+
+        
+
+
+       
+
+
                 
     
 
